@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy1nnusnjukjs"]
+
+[ext_resource type="Texture2D" uid="uid://c5og2fbpy3j10" path="res://simple-ping-pong-2Dgame-assets/arts/Player.png" id="1_0sbc1"]
+[ext_resource type="Script" uid="uid://ckni0d6h3fymn" path="res://paddle.gd" id="1_tbytw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tbytw"]
+height = 124.0
+
+[node name="paddle" type="Area2D" groups=["player_paddle"]]
+script = ExtResource("1_tbytw")
+control_up = "up"
+control_down = "down"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-7, -60)
+texture = ExtResource("1_0sbc1")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tbytw")
