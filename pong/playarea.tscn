@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://co6ocisvywqpp"]
+[gd_scene load_steps=6 format=3 uid="uid://co6ocisvywqpp"]
 
 [ext_resource type="Texture2D" uid="uid://cttm52ha3xxti" path="res://simple-ping-pong-2Dgame-assets/arts/Board.png" id="1_o7jnd"]
 [ext_resource type="PackedScene" uid="uid://cy1nnusnjukjs" path="res://paddle.tscn" id="2_i04jc"]
 [ext_resource type="PackedScene" uid="uid://cernbk6cdlpsm" path="res://ball.tscn" id="3_wqvoy"]
 [ext_resource type="PackedScene" uid="uid://dbximxqecqjkj" path="res://enemy_paddle.tscn" id="4_2u5mh"]
+[ext_resource type="PackedScene" uid="uid://cctjcxe83tlcf" path="res://ui.tscn" id="5_k0i7c"]
 
 [node name="playarea" type="Node2D"]
 
@@ -22,3 +23,7 @@ position = Vector2(610, 295)
 
 [node name="enemyPaddle" parent="." instance=ExtResource("4_2u5mh")]
 position = Vector2(50, 298)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("5_k0i7c")]

@@ -11,7 +11,10 @@ func _process(delta: float) -> void:
 	print(position)
 
 func screenBounds():
-	if position.x <= 0 or position.x >= get_viewport_rect().size.x:
+	if position.x <= 0 :
+		Manager.emit_signal("playerpoint")
+	if position.x >= get_viewport_rect().size.x:
+		Manager.comppoint.emit()
 		get_tree().reload_current_scene()
 	if position.y <= 0 or position.y >= get_viewport_rect().size.y:
 		y_speed = -y_speed
