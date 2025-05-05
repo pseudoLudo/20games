@@ -8,10 +8,12 @@ signal comppoint
 
 func _ready() -> void:
 	Manager.playerpoint.connect(addplayerScore)
-	Manager.playerpoint.connect(addCompScore)
+	Manager.comppoint.connect(addCompScore)
 
 func addplayerScore():
 	playerScore += 1
 	
+	
 func addCompScore():
 	compScore += 1
+	print(compScore)

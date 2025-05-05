@@ -6,11 +6,15 @@ extends Control
 
 func _ready() -> void:
 	Manager.playerpoint.connect(displayerScore)
-	Manager.playerpoint.connect(displayCompScore)
+	Manager.comppoint.connect(displayCompScore)
+	p_1.text = str(Manager.playerScore)
+	p_1.text = str(Manager.playerScore)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	#p_1.text = str(Manager.playerScore)
+	#c_1.text = str(Manager.compScore)
 	pass
 
 func displayerScore():
