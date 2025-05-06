@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b400i23gwc2cn"
+path="res://.godot/imported/hit.wav-dbe481b738fd95eb646ab34a691fb25d.sample"
+
+[deps]
+
+source_file="res://Flappy_Bird_assets by kosresetr55/Flappy_Bird_assets by kosresetr55/Sound Efects/hit.wav"
+dest_files=["res://.godot/imported/hit.wav-dbe481b738fd95eb646ab34a691fb25d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
