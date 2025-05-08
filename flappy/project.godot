@@ -14,6 +14,10 @@ config/name="flappy"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Manager="*res://autoloads/manager.gd"
+
 [display]
 
 window/size/viewport_width=360
@@ -21,6 +25,11 @@ window/size/viewport_height=640
 window/size/window_width_override=360
 window/size/window_height_override=640
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+player=""
+grounds=""
 
 [input]
 
