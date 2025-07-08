@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var bump = $bump
 
 var pos = global_position
-var speed = Vector2(250,350)
+var speed = Vector2(350,450)
 var col
 # Called when the node enters the scene tree for the first time.
 func _ready():

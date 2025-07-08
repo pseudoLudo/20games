@@ -1,16 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfc2qooplscda"]
 
-[ext_resource type="Script" path="res://pad.gd" id="1_y57ns"]
-[ext_resource type="Texture2D" uid="uid://bs5p7figpa5j7" path="res://BasicBreakoutAssetPack/baddle.png" id="2_rwl8k"]
+[ext_resource type="Script" uid="uid://dpwjfyvch4myr" path="res://pad.gd" id="1_y57ns"]
+[ext_resource type="Texture2D" uid="uid://bylt33y0itriq" path="res://BasicBreakoutAssetPack/padredo.png" id="2_aqlkc"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_18k81"]
-size = Vector2(112, 18)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqlkc"]
+size = Vector2(20, 69)
 
 [node name="pad" type="CharacterBody2D"]
 script = ExtResource("1_y57ns")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_18k81")
-
 [node name="paddleSprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_rwl8k")
+scale = Vector2(0.2818, 0.286)
+texture = ExtResource("2_aqlkc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.500001, -1.81e-06)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_aqlkc")

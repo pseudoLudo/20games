@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b064syk3k2mjt"]
 
-[ext_resource type="Script" path="res://gamemanger.gd" id="1_gaxfd"]
+[ext_resource type="Script" uid="uid://0lcj87q4bed3" path="res://gamemanger.gd" id="1_gaxfd"]
 [ext_resource type="AudioStream" uid="uid://cwn4dnvw6kpip" path="res://BasicBreakoutAssetPack/Explosion33.wav" id="2_ak0yb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wo5i3"]

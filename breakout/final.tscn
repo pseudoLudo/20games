@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bt4ang0jik1ef"]
 
 [ext_resource type="Texture2D" uid="uid://kxuqoyqqx8uw" path="res://BasicBreakoutAssetPack/bg.png" id="1_1q3du"]
-[ext_resource type="Script" path="res://final.gd" id="1_yqjch"]
+[ext_resource type="Script" uid="uid://ccxjby1pce3we" path="res://final.gd" id="1_yqjch"]
 [ext_resource type="Texture2D" uid="uid://bpo13ucmkdtkm" path="res://BasicBreakoutAssetPack/Untitled.png" id="2_36v6c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wxccn"]

@@ -1,18 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://bgr00rmt58f3g"]
 
-[ext_resource type="Script" path="res://ball.gd" id="1_uk0h6"]
-[ext_resource type="Texture2D" uid="uid://dms4i1lbhyo7h" path="res://BasicBreakoutAssetPack/ball.png" id="2_2mq4b"]
+[ext_resource type="Script" uid="uid://dygekh1xxnajm" path="res://ball.gd" id="1_uk0h6"]
+[ext_resource type="Texture2D" uid="uid://bkxgkk6t752hu" path="res://BasicBreakoutAssetPack/ballredo.png" id="2_ktgx5"]
 [ext_resource type="AudioStream" uid="uid://dqc5ogc8uonn4" path="res://BasicBreakoutAssetPack/Blip_Select11.wav" id="3_kxbgx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cu1ua"]
-radius = 8.0
+radius = 10.198
 
 [node name="ball" type="CharacterBody2D" groups=["ball"]]
 script = ExtResource("1_uk0h6")
 
 [node name="ballSprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-texture = ExtResource("2_2mq4b")
+scale = Vector2(0.198742, 0.19716)
+texture = ExtResource("2_ktgx5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cu1ua")
