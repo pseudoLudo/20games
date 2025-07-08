@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt4ang0jik1ef"]
+
+[ext_resource type="Texture2D" uid="uid://kxuqoyqqx8uw" path="res://BasicBreakoutAssetPack/bg.png" id="1_1q3du"]
+[ext_resource type="Script" path="res://final.gd" id="1_yqjch"]
+[ext_resource type="Texture2D" uid="uid://bpo13ucmkdtkm" path="res://BasicBreakoutAssetPack/Untitled.png" id="2_36v6c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wxccn"]
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[node name="final" type="Node2D"]
+script = ExtResource("1_yqjch")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(593, 313)
+scale = Vector2(3.76437, 2.61494)
+texture = ExtResource("1_1q3du")
+metadata/_edit_lock_ = true
+
+[node name="gmvr" type="Sprite2D" parent="."]
+position = Vector2(584, 296)
+texture = ExtResource("2_36v6c")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 432.0
+offset_top = 352.0
+offset_right = 764.0
+offset_bottom = 421.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Final Score : 0"
+label_settings = SubResource("LabelSettings_wxccn")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

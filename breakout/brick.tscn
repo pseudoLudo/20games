@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b02pokig3rpqs"]
+
+[ext_resource type="Script" path="res://brick.gd" id="1_pjhka"]
+[ext_resource type="Texture2D" uid="uid://cekarwsyukg8f" path="res://BasicBreakoutAssetPack/whitebrick.png" id="2_1exhm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iols0"]
+size = Vector2(55.5, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0mh5"]
+size = Vector2(60, 28)
+
+[node name="brick" type="Area2D" groups=["brick"]]
+script = ExtResource("1_pjhka")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture = ExtResource("2_1exhm")
+region_rect = Rect2(0, 0, 61, 28)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_iols0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y0mh5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

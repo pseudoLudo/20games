@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b064syk3k2mjt"]
+
+[ext_resource type="Script" path="res://gamemanger.gd" id="1_gaxfd"]
+[ext_resource type="AudioStream" uid="uid://cwn4dnvw6kpip" path="res://BasicBreakoutAssetPack/Explosion33.wav" id="2_ak0yb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo5i3"]
+size = Vector2(1194, 202)
+
+[node name="gamemanger" type="Node2D"]
+script = ExtResource("1_gaxfd")
+
+[node name="deathzone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deathzone"]
+position = Vector2(584, 768)
+shape = SubResource("RectangleShape2D_wo5i3")
+
+[node name="exp" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ak0yb")
+
+[connection signal="body_entered" from="deathzone" to="." method="_on_deathzone_body_entered"]
