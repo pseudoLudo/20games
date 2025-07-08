@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direction 
-var speed = 700
+var speed = 800
 var pos = global_position
 # Called when the node enters the scene tree for the first time.
 func _ready():
