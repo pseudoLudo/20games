@@ -24,6 +24,10 @@ Globals="*res://globals.gd"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_width"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/trail_2d/plugin.cfg")
+
 [input]
 
 left={
